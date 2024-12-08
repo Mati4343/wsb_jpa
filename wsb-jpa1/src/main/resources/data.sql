@@ -54,6 +54,14 @@ INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, address_id) VALUES (13, 'Dawid', 'Jankowski', '+48 613 456 789', 'dawid.jankowski@interia.pl', 'PATI0016', '1992-08-07', 13);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, address_id) VALUES (14, 'Agnieszka', 'Wójcik', '+48 614 567 890', 'agnieszka.wojcik@o2.pl', 'PATI0017', '1986-04-18', 14);
 
+INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (1, 'Med_Tre_1', 'Operacja', 1);
+INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (2, 'Med_Tre_2', 'Konsultacja', 2);
+INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (3, 'Med_Tre_3', 'Diagnoza', 7);
+INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (4, 'Med_Tre_4', 'Operacja', 6);
+INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (5, 'Med_Tre_5', 'Konsultacja', 3);
+
+
+
 
 INSERT INTO visit (id, description, time, doctor_id, patient_id) VALUES (1, 'Vis_4', '2024-12-01 09:45:12', 8, 3);
 INSERT INTO visit (id, description, time, doctor_id, patient_id) VALUES (2, 'Vis_5', '2024-12-02 14:30:05', 9, 4);
@@ -62,10 +70,4 @@ INSERT INTO visit (id, description, time, doctor_id, patient_id) VALUES (4, 'Vis
 INSERT INTO visit (id, description, time, doctor_id, patient_id) VALUES (5, 'Vis_8', '2024-12-05 12:30:45', 12, 7);
 INSERT INTO visit (id, description, time, doctor_id, patient_id) VALUES (6, 'Vis_9', '2024-12-06 13:15:10', 13, 8);
 INSERT INTO visit (id, description, time, doctor_id, patient_id) VALUES (7, 'Vis_10', '2024-12-07 08:45:30', 14, 9);
-
-INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (1, 'Med_Tre_1', 'Operacja', 1);
-INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (2, 'Med_Tre_2', 'Konsultacja', 2);
-INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (3, 'Med_Tre_3', 'Diagnoza', 7);
-INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (4, 'Med_Tre_4', 'Operacja', 6);
-INSERT INTO medical_treatment (id, description, type, visit_id) VALUES (5, 'Med_Tre_5', 'Konsultacja', 3);
 
