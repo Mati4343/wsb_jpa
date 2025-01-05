@@ -40,14 +40,12 @@ public class DoctorEntity {
 	@Enumerated(EnumType.STRING)
 	private Specialization specialization;
 
-	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "doctor", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY) //dwustronna relacja
 	private Collection<VisitEntity> visits;
 
-	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "address_id")
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false) //jednostronna relacja
+	@JoinColumn(name = "id_address")
 	private AddressEntity address;
-
-
 
 	public Long getId() {
 		return id;
@@ -109,9 +107,11 @@ public class DoctorEntity {
 	public AddressEntity getAddress() {
 		return address;
 	}
+
 	public void setAddress(AddressEntity address) {
 		this.address = address;
 	}
+
 	public Collection<VisitEntity> getVisits() {return visits;}
 	public void addVisit(VisitEntity visit) {
 		visits.add(visit);

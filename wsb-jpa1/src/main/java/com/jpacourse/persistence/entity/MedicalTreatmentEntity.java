@@ -20,8 +20,8 @@ public class MedicalTreatmentEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@ManyToOne(optional = false)
-	@JoinColumn(name = "visit_id")
+	@ManyToOne(optional = false) //relacja dwustronna
+	@JoinColumn(name = "id_visit")
 	private VisitEntity visit;
 
 	@Column(nullable = false)
@@ -54,10 +54,8 @@ public class MedicalTreatmentEntity {
 		this.type = type;
 	}
 
-	public VisitEntity getVisit() {
-		return visit;}
+	public VisitEntity getVisit() {return visit; }
 
 	public void setVisit(VisitEntity visit) {
 		this.visit = visit;}
-
 }

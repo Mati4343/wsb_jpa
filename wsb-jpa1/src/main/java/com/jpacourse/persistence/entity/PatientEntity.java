@@ -33,11 +33,11 @@ public class PatientEntity {
 	@Column(nullable = false)
 	private String patientNumber;
 
-	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "patient", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY) //relacja dustronna
 	private Collection<VisitEntity> visits;
 
-	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "address_id")
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false) //relacja jednostronna od strony rodzica
+	@JoinColumn(name = "id_address")
 	private AddressEntity address;
 
 

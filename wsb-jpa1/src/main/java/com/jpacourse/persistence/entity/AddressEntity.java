@@ -27,6 +27,7 @@ public class AddressEntity {
 	@Column(nullable = false)
 	private String postalCode;
 
+	//jednostronna relacja dziecko od Patient oraz dziecko od Doctor
 	public Long getId() {
 		return id;
 	}

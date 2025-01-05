@@ -1,13 +1,13 @@
 package com.jpacourse.persistence.entity;
 
 import java.time.LocalDateTime;
-import java.util.Collection;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Collection;
 import javax.persistence.*;
 
 @Entity
@@ -20,16 +20,15 @@ public class VisitEntity {
 
 	private String description;
 
-	@OneToMany(mappedBy = "visit", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "visit", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY) //relacja dwustronna
 	private Collection<MedicalTreatmentEntity> medicalTreatments;
 
-	@ManyToOne
-	@JoinColumn(name = "patient_id")
+	@ManyToOne //relacja dwustronna
+	@JoinColumn(name = "id_patient")
 	private PatientEntity patient;
 
-
-	@ManyToOne
-	@JoinColumn(name = "doctor_id")
+	@ManyToOne //relacja dwustronna
+	@JoinColumn(name = "id_doctor")
 	private DoctorEntity doctor;
 
 
