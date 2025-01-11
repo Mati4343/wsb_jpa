@@ -80,6 +80,12 @@ public class VisitEntity {
 		medicalTreatments.add(medicalTreatment);
 		medicalTreatment.setVisit(this);
 	}
+
+	public void setMedicalTreatments(Collection<MedicalTreatmentEntity> medicalTreatments)
+	{
+		this.medicalTreatments = medicalTreatments;
+	}
+
 	public void removeMedicalTreatment(MedicalTreatmentEntity medicalTreatment) {
 		medicalTreatments.remove(medicalTreatment);
 		medicalTreatment.setVisit(null);

@@ -117,12 +117,14 @@ public class DoctorEntity {
 		visits.add(visit);
 		visit.setDoctor(this);
 	}
+
+	public void setVisits(Collection<VisitEntity> visit)
+	{
+		this.visits = visit;
+	}
+
 	public void removeVisit(VisitEntity visit) {
 		visits.remove(visit);
 		visit.setDoctor(null);
 	}
-
-
-
-
 }

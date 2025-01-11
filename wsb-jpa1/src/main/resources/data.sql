@@ -39,20 +39,20 @@ INSERT INTO doctor (id, first_name, last_name, telephone_number, email, doctor_n
 INSERT INTO doctor (id, first_name, last_name, telephone_number, email, doctor_number, specialization, id_address) VALUES (17, 'Piotr', 'Grabowski', '+48 605 444 555', 'piotr.grabowski@gmail.com', 'DOC0020', 'Kardiologia', 1);
 
 
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (1, 'Julia', 'Kowalska', '+48 601 234 567', 'julia.kowalska@gmail.com', 'PATI0004', '1990-02-15', 1);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (2, 'Michał', 'Nowak', '+48 602 345 678', 'michal.nowak@o2.pl', 'PATI0005', '1985-08-29', 2);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (3, 'Katarzyna', 'Wiśniewska', '+48 603 456 789', 'katarzyna.wisniewska@interia.pl', 'PATI0006', '1995-11-02', 3);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (4, 'Paweł', 'Szymański', '+48 604 567 890', 'pawel.szymanski@wp.pl', 'PATI0007', '1987-03-11', 4);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (5, 'Aneta', 'Kaczmarek', '+48 605 678 901', 'aneta.kaczmarek@gmail.com', 'PATI0008', '1992-09-19', 5);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (6, 'Marek', 'Ławniczak', '+48 606 789 012', 'marek.lawniczak@interia.pl', 'PATI0009', '1980-04-13', 6);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (7, 'Ewa', 'Pawlak', '+48 607 890 123', 'ewa.pawlak@poczta.onet.pl', 'PATI0010', '1993-07-08', 7);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (8, 'Piotr', 'Zawisza', '+48 608 901 234', 'piotr.zawisza@wp.pl', 'PATI0011', '1991-12-20', 8);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (9, 'Magdalena', 'Lewandowska', '+48 609 012 345', 'magdalena.lewandowska@o2.pl', 'PATI0012', '1988-01-29', 9);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (10, 'Sebastian', 'Grzelak', '+48 610 123 456', 'sebastian.grzelak@interia.pl', 'PATI0013', '1990-06-18', 10);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (11, 'Krzysztof', 'Stolarz', '+48 611 234 567', 'krzysztof.stolarz@wp.pl', 'PATI0014', '1983-02-05', 11);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (12, 'Anna', 'Piotrowska', '+48 612 345 678', 'anna.piotrowska@poczta.onet.pl', 'PATI0015', '1994-03-25', 12);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (13, 'Dawid', 'Jankowski', '+48 613 456 789', 'dawid.jankowski@interia.pl', 'PATI0016', '1992-08-07', 13);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address) VALUES (14, 'Agnieszka', 'Wójcik', '+48 614 567 890', 'agnieszka.wojcik@o2.pl', 'PATI0017', '1986-04-18', 14);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (1, 'Julia', 'Kowalska', '+48 601 234 567', 'julia.kowalska@gmail.com', 'PATI0004', '1990-02-15', 1, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (2, 'Michał', 'Nowak', '+48 602 345 678', 'michal.nowak@o2.pl', 'PATI0005', '1985-08-29', 2, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (3, 'Katarzyna', 'Wiśniewska', '+48 603 456 789', 'katarzyna.wisniewska@interia.pl', 'PATI0006', '1995-11-02', 3, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (4, 'Paweł', 'Szymański', '+48 604 567 890', 'pawel.szymanski@wp.pl', 'PATI0007', '1987-03-11', 4, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (5, 'Aneta', 'Kaczmarek', '+48 605 678 901', 'aneta.kaczmarek@gmail.com', 'PATI0008', '1992-09-19', 5, false);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (6, 'Marek', 'Ławniczak', '+48 606 789 012', 'marek.lawniczak@interia.pl', 'PATI0009', '1980-04-13', 6, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (7, 'Ewa', 'Pawlak', '+48 607 890 123', 'ewa.pawlak@poczta.onet.pl', 'PATI0010', '1993-07-08', 7, false);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (8, 'Piotr', 'Zawisza', '+48 608 901 234', 'piotr.zawisza@wp.pl', 'PATI0011', '1991-12-20', 8, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (9, 'Magdalena', 'Lewandowska', '+48 609 012 345', 'magdalena.lewandowska@o2.pl', 'PATI0012', '1988-01-29', 9, false);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (10, 'Sebastian', 'Grzelak', '+48 610 123 456', 'sebastian.grzelak@interia.pl', 'PATI0013', '1990-06-18', 10, false);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (11, 'Krzysztof', 'Stolarz', '+48 611 234 567', 'krzysztof.stolarz@wp.pl', 'PATI0014', '1983-02-05', 11, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (12, 'Anna', 'Piotrowska', '+48 612 345 678', 'anna.piotrowska@poczta.onet.pl', 'PATI0015', '1994-03-25', 12, false);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (13, 'Dawid', 'Jankowski', '+48 613 456 789', 'dawid.jankowski@interia.pl', 'PATI0016', '1992-08-07', 13, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (14, 'Agnieszka', 'Wójcik', '+48 614 567 890', 'agnieszka.wojcik@o2.pl', 'PATI0017', '1986-04-18', 14, false);
 
 
 INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (1, 'Vis_4', '2024-12-01 09:45:12', 8, 3);
@@ -64,8 +64,8 @@ INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (6, 'Vis
 INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (7, 'Vis_10', '2024-12-07 08:45:30', 14, 9);
 
 
-INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (1, 'Med_Tre_1', 'Operacja', 1);
-INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (2, 'Med_Tre_2', 'Konsultacja', 2);
-INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (3, 'Med_Tre_3', 'Diagnoza', 7);
-INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (4, 'Med_Tre_4', 'Operacja', 6);
-INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (5, 'Med_Tre_5', 'Konsultacja', 3);
+INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (1, 'Med_Tre_1', 'USG', 1);
+INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (2, 'Med_Tre_2', 'EKG', 2);
+INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (3, 'Med_Tre_3', 'EKG', 7);
+INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (4, 'Med_Tre_4', 'RTG', 6);
+INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (5, 'Med_Tre_5', 'USG', 3);
