@@ -44,11 +44,11 @@ INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (3, 'Katarzyna', 'Wiśniewska', '+48 603 456 789', 'katarzyna.wisniewska@interia.pl', 'PATI0006', '1995-11-02', 3, true);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (4, 'Paweł', 'Szymański', '+48 604 567 890', 'pawel.szymanski@wp.pl', 'PATI0007', '1987-03-11', 4, true);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (5, 'Aneta', 'Kaczmarek', '+48 605 678 901', 'aneta.kaczmarek@gmail.com', 'PATI0008', '1992-09-19', 5, false);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (6, 'Marek', 'Ławniczak', '+48 606 789 012', 'marek.lawniczak@interia.pl', 'PATI0009', '1980-04-13', 6, true);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (6, 'Marek', 'Lawniczak', '+48 606 789 012', 'marek.lawniczak@interia.pl', 'PATI0009', '1980-04-13', 6, true);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (7, 'Ewa', 'Pawlak', '+48 607 890 123', 'ewa.pawlak@poczta.onet.pl', 'PATI0010', '1993-07-08', 7, false);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (8, 'Piotr', 'Zawisza', '+48 608 901 234', 'piotr.zawisza@wp.pl', 'PATI0011', '1991-12-20', 8, true);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (9, 'Magdalena', 'Lewandowska', '+48 609 012 345', 'magdalena.lewandowska@o2.pl', 'PATI0012', '1988-01-29', 9, false);
-INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (10, 'Sebastian', 'Grzelak', '+48 610 123 456', 'sebastian.grzelak@interia.pl', 'PATI0013', '1990-06-18', 10, false);
+INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (10, 'Sebastian', 'Kaczmarek', '+48 610 123 456', 'sebastian.grzelak@interia.pl', 'PATI0013', '1990-06-18', 10, false);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (11, 'Krzysztof', 'Stolarz', '+48 611 234 567', 'krzysztof.stolarz@wp.pl', 'PATI0014', '1983-02-05', 11, true);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (12, 'Anna', 'Piotrowska', '+48 612 345 678', 'anna.piotrowska@poczta.onet.pl', 'PATI0015', '1994-03-25', 12, false);
 INSERT INTO patient (id, first_name, last_name, telephone_number, email, patient_number, date_of_birth, id_address, diabetes) VALUES (13, 'Dawid', 'Jankowski', '+48 613 456 789', 'dawid.jankowski@interia.pl', 'PATI0016', '1992-08-07', 13, true);
@@ -61,7 +61,7 @@ INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (3, 'Vis
 INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (4, 'Vis_7', '2024-12-04 10:00:00', 11, 6);
 INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (5, 'Vis_8', '2024-12-05 12:30:45', 12, 7);
 INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (6, 'Vis_9', '2024-12-06 13:15:10', 13, 8);
-INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (7, 'Vis_10', '2024-12-07 08:45:30', 14, 9);
+INSERT INTO visit (id, description, time, id_doctor, id_patient) VALUES (7, 'Vis_10', '2024-12-07 08:45:30', 14, 1);
 
 
 INSERT INTO medical_treatment (id, description, type, id_visit) VALUES (1, 'Med_Tre_1', 'USG', 1);

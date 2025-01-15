@@ -8,7 +8,8 @@ import com.jpacourse.service.ServiceVisit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+import java.util.Collection;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -25,5 +26,16 @@ public class ImplServiceVisit implements ServiceVisit{
     public ToVisit searchId(Long id) {
         final VisitEntity entity = daoVisit.findOne(id);
         return MapperVisit.mapToTO(entity);
+    }
+
+    @Override
+    public Collection<ToVisit> searchAllIdPatient(Long id_patient)
+    {
+        final Collection<VisitEntity> entities = daoVisit.searchPatient(id_patient);
+
+        return entities
+                .stream()
+                .map(MapperVisit::mapToTO)
+                .collect(Collectors.toList());
     }
 }

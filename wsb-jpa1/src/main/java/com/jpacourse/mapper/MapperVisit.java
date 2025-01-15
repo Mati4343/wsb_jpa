@@ -17,7 +17,7 @@ public class MapperVisit
         tovisit.setMedicalTreatments(visitEntity.getMedicalTreatments() != null ? visitEntity.getMedicalTreatments().stream()
                 .map(MapperMedicalTreatment::mapToTO).collect(Collectors.toList()):null);
 
-        tovisit.setPatient(MapperPatient.mapToTO(visitEntity.getPatient()));
+        tovisit.setPatient(MapperPatient.mapForVisitToTO(visitEntity.getPatient()));
         tovisit.setDoctor(MapperDoctor.mapToTO(visitEntity.getDoctor()));
         tovisit.setTime(visitEntity.getTime());
         return tovisit;
